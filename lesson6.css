@@ -1,0 +1,96 @@
+
+.circleOne{
+
+    position: absolute;
+    top: 5%;
+    left: 25%;
+
+    border-radius: 50%;
+    width: 250px; 
+    height: 250px;
+    background-color: #F161A3;
+}
+.circleTwo{
+    bottom: 7%;
+    right: 20%;
+    position: absolute;
+
+    width: 350px; 
+    height: 350px;
+    border-radius: 50%;
+    background-color: #FA7C64;
+}
+.maSquare{
+
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    width: 330px;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    box-shadow: 5px 5px 15px gray ;
+}
+body{
+    background-color: #ECECF4;
+}
+.main{
+    position: relative;
+    height: 100vh;
+}
+
+li{
+    list-style-type:none;
+}
+.bold{
+    font-size: medium;
+    font-weight: bold;
+}
+.cursive{
+    font-size: 12px;
+}
+.info{
+    padding-bottom: 10px;
+}
+#btn{
+    text-align: center;
+    margin-top: 13px;
+    
+}
+#btn1{
+    width: 80%;
+    height: 40px;
+    color: #ECECF4;
+    background-color: #F7656E;
+    border-radius: 4px;
+    border: 1px solid #F7656E;
+    font-size: medium;
+    box-shadow: 5px 5px 15px gray ;
+}
+hr{
+    margin-right: 20px;
+}
+#btn1:hover{
+    border: 2px solid #F7656E;
+background-color: #ECECF4;
+color: #F7656E;
+font-weight: bolder;
+box-shadow: 5px 5px 15px #F7656E ;
+}
+.maSquare:hover .bold{
+color: #F7656E;
+font-weight: bolder;
+}
+.maSquare:hover h3{
+    color: #F7656E;
+    font-weight: bolder;
+    }
+
+body:has(.maSquare:hover) .circleOne {
+    background-image: linear-gradient(#F7656E, #F161A3);
+  }
+
+  body:has(.maSquare:hover) .circleTwo {
+    background-image: linear-gradient(#F7656E, #F161A3);
+  }
